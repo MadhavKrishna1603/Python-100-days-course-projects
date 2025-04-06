@@ -17,7 +17,6 @@ def caesar(original_text, shift_amount, encode_or_decode):
     print(f"Here is the {encode_or_decode}d result: {output_text}")
 
 
-
 to_run = True
 while to_run :
 
