@@ -9,8 +9,6 @@ MY_LONG = 80.181671 # Your longitude
 MY_EMAIL="madhavkrishnapython@gmail.com"
 MY_PASSWORD="**your app password**"
 def iss_overhead():
-
-
     response = requests.get(url="http://api.open-notify.org/iss-now.json")
     response.raise_for_status()
     data = response.json()
@@ -20,7 +18,6 @@ def iss_overhead():
 
     if MY_LAT - 5 <= iss_latitude <= MY_LAT + 5 and MY_LONG - 5 <= iss_longitude <= MY_LONG + 5:
         return True
-#Your position is within +5 or -5 degrees of the ISS position.
 
 def is_dark():
     parameters = {
