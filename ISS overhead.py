@@ -40,7 +40,6 @@ while True:
     time.sleep(60)
 
     if iss_overhead() and is_dark():
-
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
             connection.login(user=MY_EMAIL,password=MY_PASSWORD)
