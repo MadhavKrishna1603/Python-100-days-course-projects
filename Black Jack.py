@@ -26,8 +26,6 @@ def compare(u_score,c_score):
     else:
         print("You Lose!")
 
-
-
 def want_to_play():
     user_cards = []
     computer_cards = []
